@@ -2,10 +2,10 @@ import logo from '../assets/logo.png';
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-primary)] h-[50px]">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-primary)] h-[70px]">
       <nav className="flex items-center justify-between px-5 py-[5px] h-full max-w-full">
         <div className="nav-logo">
-          <a href="#">
+          <a href="/">
             <img src={logo} alt="Logo" className="h-10" />
           </a>
         </div>

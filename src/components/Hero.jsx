@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import accueilImage from '../assets/accueil.png';
+// import accueilImage from '../assets/accueil.png';
 import iconWhatsapp from '../assets/icon_whatsp.png';
 import iconTel from '../assets/icon_tel.png';
 
@@ -15,7 +15,7 @@ const Hero = () => {
   const confirmAction = () => {
     if (modalData.type === 'whatsapp') {
       window.open(
-        "https://wa.me/18099929258?text=Bonjour,%0AVia%20le%20site%20WilBeauty,%20je%20souhaite%20passer%20une%20commande.",
+        "https://wa.me/18099929258?text=Bonjour,%0AVia%20le%20site%20WilBeauty.com,%20je%20souhaite%20passer%20une%20commande.",
         "_blank"
       );
     } else if (modalData.type === 'call') {
@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="text-center pt-[100px] pb-[30px] px-5 bg-white">
+      <section className="text-center pt-[100px] pb-[0px] px-5 bg-white">
         <div className="hero-text">
           <h1 className="text-4xl mb-2.5 font-bold">WilBeauty</h1>
           <h2 className="mb-2.5 text-2xl">Huile et Pomade Naturelle pour Cheveux</h2>
@@ -73,9 +73,9 @@ const Hero = () => {
       </section>
 
       {/* Image Hero */}
-      <section className="w-full mt-[50px] overflow-hidden">
+      {/* <section className="w-full mt-[50px] overflow-hidden">
         <img src={accueilImage} alt="Image d'accueil" className="w-full h-auto block" />
-      </section>
+      </section> */}
 
       {/* Modal DaisyUI */}
       {modalData.open && (
